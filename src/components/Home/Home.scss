@@ -1,0 +1,56 @@
+* {
+    // border: 1px solid red;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    .peep-image {
+        width: 28.9rem;
+        height: 45.2rem;
+        border-radius: 1.2rem;
+        margin-right: 5rem;
+    }
+
+    .hero-text-container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 22rem;
+
+        .peep-store {
+            font-family: 'Just Another Hand', cursive;
+            font-size: 11rem;
+            font-weight: 200;
+            color: black;
+        }
+
+        .pink-text {
+            text-align: end;
+            color: #FF008C;
+        }
+
+        .quote-container {
+            padding-top: 4rem;
+
+            .quote {
+
+                font-family: 'Just Another Hand', cursive;
+                font-size: 3.5rem;
+                color: black;
+            }
+
+
+
+            .quote-pink {
+                text-align: end;
+                color: #FF008C;
+            }
+        }
+
+
+    }
+}

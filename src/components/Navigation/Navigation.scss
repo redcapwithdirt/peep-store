@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+.navigation {
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    height: 16rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+    .logo-container {
+        img {
+            width: 24rem;
+            height: 11rem;
+        }
+    }
+
+    .nav-links {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3rem;
+
+
+        .nav-link {
+            padding-left: 4rem;
+            position: relative;
+            text-decoration: none;
+            font-family: 'Just Another Hand', cursive;
+            color: black;
+            font-size: 4rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0.3rem;
+                bottom: 0.5rem;
+                left: 4rem;
+                background-color: black;
+                transition: width 0.3s ease;
+                /* Add animation to the width */
+            }
+
+            &:hover::before {
+                width: 70%;
+            }
+        }
+
+        .active {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 70%;
+                /* Full-width underline */
+                height: 0.3rem;
+                bottom: 0.5rem;
+                left: 4rem;
+                background-color: black;
+            }
+        }
+    }
+
+    .login-container {
+        padding-right: 3rem;
+        .login-text {
+            font-family: 'Just Another Hand', cursive;
+            font-size: 3rem;
+            display: inline-block;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            background-color:black;
+            color: #E2E2E2;
+            border: none;
+            border-radius: 3rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            white-space: nowrap;
+            /* Prevent button text from wrapping */
+            width: 14rem;
+            &:hover{
+                color: black;
+                background-color: #FF008C;
+            }
+        }
+    }
+
+}
